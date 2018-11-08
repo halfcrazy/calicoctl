@@ -1,5 +1,5 @@
-hash: 3412e4ba36cc226587af8e992077f5b34dfe735c50c4f9446f9824f96ef75fc5
-updated: 2018-11-04T14:16:19.332501-08:00
+hash: 7030fbda1b7c67840ffd6b142ff909dc478ff5410d7db9a032c6283fc0c5db4e
+updated: 2018-11-08T11:09:10.116755+08:00
 imports:
 - name: cloud.google.com/go
   version: 3b1ae45394a234c385be014e9a488f2bb6eef821
@@ -38,7 +38,7 @@ imports:
 - name: github.com/dgrijalva/jwt-go
   version: d2709f9f1f31ebcda9651b03077758c1f3a0018c
 - name: github.com/docopt/docopt-go
-  version: 784ddc588536785e7299f7272f39101f7faccc3f
+  version: ee0de3bc6815ee19d4a46c7eb90f829db0e014b1
 - name: github.com/eapache/channels
   version: 47238d5aae8c0fefd518ef2bee46290909cf8263
 - name: github.com/eapache/queue
@@ -107,30 +107,23 @@ imports:
   - json/parser
   - json/scanner
   - json/token
-- name: github.com/hpcloud/tail
-  version: a1dbeea552b7c8df4b542c66073e393de198a800
-  subpackages:
-  - ratelimiter
-  - util
-  - watch
-  - winfile
 - name: github.com/imdario/mergo
   version: 6633656539c1639d9d78127b7d47c622b5d7b6dc
 - name: github.com/influxdata/influxdb
-  version: 5bcb952b6f32718a760edfa2af53f53542ad9d60
+  version: 2e7d8d753fd70e7378c537dfe82b64fd2786b1cb
   subpackages:
   - client/v2
   - models
   - pkg/escape
 - name: github.com/influxdata/platform
-  version: 6549f24b16f8229c175e96b9f9233baa19b4bc97
+  version: cc1070fc1c2f8011895a041f28b6b8aee028ea71
   subpackages:
   - models
   - pkg/escape
 - name: github.com/json-iterator/go
   version: f2b4162afba35581b6d4a50d3b8f34e33c144682
 - name: github.com/kelseyhightower/envconfig
-  version: dd1402a4d99de9ac2f396cd6fcb957bc2c695ec1
+  version: f611eb38b3875cc3bd991ca91c51d06446afa14c
 - name: github.com/magiconair/properties
   version: c2353362d570a7bfa228149c62842019201cfb71
 - name: github.com/mattn/go-runewidth
@@ -140,7 +133,7 @@ imports:
   subpackages:
   - pbutil
 - name: github.com/mcuadros/go-version
-  version: 6d5863ca60fa6fe914b5fd43ed8533d7567c5b0b
+  version: 88e56e02bea1c203c99222c365fa52a69996ccac
 - name: github.com/mitchellh/mapstructure
   version: 3536a929edddb9a5b34bd6861dc4a9647cb459fe
 - name: github.com/modern-go/concurrent
@@ -150,7 +143,7 @@ imports:
 - name: github.com/olekukonko/tablewriter
   version: e6d60cf7ba1f42d86d54cdf5508611c4aafb3970
 - name: github.com/onsi/ginkgo
-  version: 3774a09d95489ccaa16032e0770d08ea77ba6184
+  version: 7f8ab55aaf3b86885aa55b762e803744d1674700
   subpackages:
   - config
   - extensions/table
@@ -160,18 +153,15 @@ imports:
   - internal/leafnodes
   - internal/remote
   - internal/spec
-  - internal/spec_iterator
   - internal/specrunner
   - internal/suite
   - internal/testingtproxy
   - internal/writer
   - reporters
   - reporters/stenographer
-  - reporters/stenographer/support/go-colorable
-  - reporters/stenographer/support/go-isatty
   - types
 - name: github.com/onsi/gomega
-  version: 7615b9433f86a8bdf29709bf288bc4fd0636a369
+  version: 2152b45fa28a361beba9aab0885972323a444e28
   subpackages:
   - format
   - internal/assertion
@@ -212,7 +202,9 @@ imports:
 - name: github.com/projectcalico/go-yaml-wrapper
   version: 598e54215bee41a19677faa4f0c32acd2a87eb56
 - name: github.com/projectcalico/libcalico-go
-  version: 489a4d4fcdf275caca1edf59e95054b6e8601555
+  version: ad040a1be86537d117d94a8e193c6cdd2b74e9e4
+  repo: https://github.com/halfcrazy/libcalico-go.git
+  vcs: git
   subpackages:
   - lib/apiconfig
   - lib/apis/v1
@@ -247,12 +239,11 @@ imports:
   - lib/validator/v3
   - lib/watch
 - name: github.com/prometheus/client_golang
-  version: 773f5027234d0b08adf766be34f55df2f312abf7
+  version: 967789050ba94deca04a5e84cce8ad472ce313c1
   subpackages:
   - prometheus
-  - prometheus/internal
 - name: github.com/prometheus/client_model
-  version: 5c3871d89910bfb32f5fcab2aa4b9ec68e65a99f
+  version: 6f3806018612930941127f2a7c6c453ba2c527d2
   subpackages:
   - go
 - name: github.com/prometheus/common
@@ -268,7 +259,7 @@ imports:
 - name: github.com/satori/go.uuid
   version: f58768cc1a7a7e77a3bd49e98cdd21419399b6a3
 - name: github.com/shirou/gopsutil
-  version: 3ec50d2876a36047b2ca39f955ba88fb7a455e92
+  version: 48177ef5f8809fc72b716c414435f2d4cff8e24d
   subpackages:
   - cpu
   - host
@@ -291,19 +282,19 @@ imports:
 - name: github.com/spf13/pflag
   version: 583c0c0531f06d5278b7d917446061adc344b5cd
 - name: github.com/spf13/viper
-  version: 62edee319679b6ceaec16de03b966102d2dea709
+  version: ae103d7e593e371c69e832d5eb3347e2b80cbbc9
 - name: github.com/StackExchange/wmi
   version: b12b22c5341f0c26d88c4d66176330500e84db68
 - name: github.com/termie/go-shutil
   version: bcacb06fecaeec8dc42af03c87c6949f4a05c74c
 - name: github.com/vishvananda/netlink
-  version: fe3b5664d23a11b52ba59bece4ff29c52772a56b
+  version: 6e453822d85ef5721799774b654d4d02fed62afb
   subpackages:
   - nl
 - name: github.com/vishvananda/netns
   version: 54f0e4339ce73702a0607f49922aaa1e749b418d
 - name: golang.org/x/crypto
-  version: 9419663f5a44be8b34ca85f08abc5fe1be11f8a3
+  version: 1351f936d976c60a0a48d728281922cf63eafb8d
   subpackages:
   - ssh/terminal
 - name: golang.org/x/net
@@ -313,7 +304,6 @@ imports:
   - context/ctxhttp
   - html
   - html/atom
-  - html/charset
   - http2
   - http2/hpack
   - idna
@@ -329,27 +319,13 @@ imports:
   - jws
   - jwt
 - name: golang.org/x/sys
-  version: ebfc5b4631820b793c9010c87fd8fef0f39eb082
+  version: 1b2967e3c290b7c545b3db0deeda16e9be4f98a2
   subpackages:
   - unix
   - windows
 - name: golang.org/x/text
   version: b19bf474d317b857955b12035d2c5acb57ce8b01
   subpackages:
-  - encoding
-  - encoding/charmap
-  - encoding/htmlindex
-  - encoding/internal
-  - encoding/internal/identifier
-  - encoding/japanese
-  - encoding/korean
-  - encoding/simplifiedchinese
-  - encoding/traditionalchinese
-  - encoding/unicode
-  - internal/tag
-  - internal/utf8internal
-  - language
-  - runes
   - secure/bidirule
   - transform
   - unicode/bidi
@@ -359,7 +335,7 @@ imports:
   subpackages:
   - rate
 - name: google.golang.org/appengine
-  version: 4a4468ece617fc8205e99368fa2200e9d1fad421
+  version: 0a24098c0ec68416ec050f567f75df563d6b231e
   subpackages:
   - internal
   - internal/app_identity
@@ -394,14 +370,10 @@ imports:
   - status
   - tap
   - transport
-- name: gopkg.in/fsnotify/fsnotify.v1
-  version: c2828203cd70a50dcccfb2761f8b1f8ceef9a8e9
 - name: gopkg.in/go-playground/validator.v8
-  version: 5f1438d3fca68893a817e4a66806cea46a9e4ebf
+  version: 5f57d2222ad794d0dffb07e664ea05e2ee07d60c
 - name: gopkg.in/inf.v0
   version: 3887ee99ecf07df5b447e9b00d9c0b2adaa9f3e4
-- name: gopkg.in/tomb.v1
-  version: c131134a1947e9afd9cecfe11f4c6dff0732ae58
 - name: gopkg.in/tomb.v2
   version: d5d1b5820637886def9eef33e03a27a9f166942c
 - name: gopkg.in/yaml.v2

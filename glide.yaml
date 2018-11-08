@@ -15,7 +15,9 @@ import:
   - json
 - package: github.com/projectcalico/go-yaml-wrapper
 - package: github.com/projectcalico/libcalico-go
-  version: 489a4d4fcdf275caca1edf59e95054b6e8601555
+  repo: https://github.com/halfcrazy/libcalico-go.git
+  vcs: git
+  version: feat/dont-alloc-binded-ip-v3.3
   subpackages:
   - lib/apiconfig
   - lib/apis/v1
